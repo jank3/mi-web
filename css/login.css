@@ -1,0 +1,188 @@
+/* Fuente Tboi */
+@font-face {
+  font-family: 'tboi';
+  src: url('../fonts/upheavtt.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Estilos general del body */
+body {
+  font-family: 'tboi', cursive;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #000000, grey, white);
+  box-sizing: border-box;
+}
+
+/* Contenido principal del formulario */
+.main {
+  width: 60%;
+  margin: 0 auto; 
+  height: 500px;
+  background: red;
+  overflow: hidden;
+  background: url("../img/fondo_principal.jpg") no-repeat center/cover;
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px #000;
+  font-family: tboi;
+  box-sizing: border-box;
+}
+
+#chk {
+  display: none;
+}
+
+.signup {
+  position: relative;
+  width: 100%;
+  font-size: 3vh;
+  height: 100%;
+}
+
+label {
+  color: #fff;
+  justify-content: center;
+  display: flex;
+  margin: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+input {
+  width: 60%;
+  height: 10px;
+  background: #e0dede;
+  justify-content: center;
+  display: flex;
+  margin: 20px auto;
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: #47474781;
+  font-family: tboi;
+}
+button {
+  width: 60%;
+  height: 40px;
+  margin: 10px auto;
+  justify-content: center;
+  display: block;
+  color: #fff;
+  background: grey;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  transition: .2s ease-in;
+  cursor: pointer;
+  font-family: tboi;
+}
+
+button:hover {
+  background: grey;
+}
+
+.login {
+  height: 460px;
+  background: #eee;
+  border-radius: 60% / 10%;
+  transform: translateY(-180px);
+  transition: .8s ease-in-out;
+}
+
+.login label {
+  color: black;
+  font-size: 3vh;
+  transform: scale(.6);
+}
+#chk:checked ~ .login {
+  transform: translateY(-500px);
+}
+
+#chk:checked ~ .login label {
+  transform: scale(1);
+}
+
+#chk:checked ~ .signup label {
+  transform: scale(.6);
+}
+
+/* Menu de navegación, Header y logo */
+#logo {
+  width: 100px;
+  height: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(34, 34, 34, 0.5); /* Más opaco */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #000;
+  transition: width 0.3s ease, right 0.3s ease;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  text-shadow: 0 0 10px white;
+}
+
+/* Adaptador de tamaño */
+@media (max-width: 980px) {
+  nav {
+    flex-direction: column;
+  }
+  nav a {
+    margin: 5px 0;
+  }
+  label, button {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 989px) {
+  nav {
+    flex-direction: row;
+  }
+  nav a {
+    margin: 0 10px;
+  }
+}

@@ -1,0 +1,357 @@
+/* Fuente */
+@font-face {
+  font-family: 'tboi';
+  src: url('../fonts/upheavtt.ttf') format('truetype');
+}
+
+/* Estilos del cuerpo */
+body {
+  font-family: 'tboi', cursive;
+  background: url('../img/fondo_principal.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilos del encabezado */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(34, 34, 34, 0.8);
+}
+
+.logo1 img {
+  width: 100px;
+  transition: transform 0.3s ease;
+}
+
+.logo1 img:hover {
+  transform: scale(1.1);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #000000;
+  transition: width 0.3s ease, right 0.3s ease;
+}
+
+nav a:hover {
+  color: #000000;
+}
+
+nav a:hover::after {
+  width: 100%;
+  right: 0;
+}
+
+nav a:hover {
+  text-shadow: 0 0 10px white;
+}
+
+/* Estilos de párrafos */
+p {
+  font-size: 25px;
+  text-align: center;
+}
+
+/* Estilos de figuras */
+figure {
+  border: thick black solid;
+  border-width: 10px;
+  display: block;
+  padding: 0px;
+  max-width: 100%;
+  border-radius: 50px;
+}
+
+img {
+  border-radius: 50px;
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  background-color: grey;
+  color: rgb(255, 255, 255);
+  font-family: 'tboi';
+  padding: 20px;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 25px;
+}
+
+/* Clases */
+.subtitulo {
+  font-size: 75px;
+}
+
+.foto1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.sobremi {
+  font-family: 'tboi', sans-serif;
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 7.5%;
+  border: 10px solid white;
+  background-color: black;
+  border-radius: 25px;
+}
+
+.sobremi span {
+  border-radius: 2px;
+}
+
+.sobremi span:hover {
+  text-shadow: 0 0 10px white;
+}
+
+.sobremi p {
+  color: white;
+  text-shadow: 0 0 10px white;
+  margin: 10px;
+}
+
+.subtitulo {
+  color: white;
+  text-align: center;
+  font-size: 55px;
+  background-attachment: fixed;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.titulo {
+  color: white;
+  text-align: center;
+  font-size: 70px;
+  background-attachment: fixed;
+  border-radius: 8px;
+  width: 100%;
+}
+
+figcaption {
+  text-align: center;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: rgba(34, 34, 34, 0.8);
+  padding: 10px 20px;
+  text-align: center;
+  width: 97.9%;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-list li {
+  margin: 0 10px;
+}
+
+.footer-list a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.footer-list a::after {
+  position: fixed;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #000000;
+  transition: width 0.3s ease, right 0.3s ease;
+}
+
+.footer-list a:hover {
+  color: #000000;
+  text-shadow: 0 0 10px white;
+}
+
+.footer-list a:hover::after {
+  width: 100%;
+  right: 0;
+}
+
+/* Estilos de glitch */
+.glitch {
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+               -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+               0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  animation: glitch 2.5s infinite;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 80%;
+}
+
+.glitchv2 {
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  animation: glitch 2500ms infinite;
+}
+
+.glitch span {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.glitch span:first-child {
+  width: 100%;
+  animation: glitch 0.65s infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  transform: translate(-0.025em, -0.0125em);
+  opacity: 0.8;
+}
+
+.glitch span:last-child {
+  width: 100%;
+  animation: glitch 0.375s infinite;
+  clip-path: polygon(0 80%, 100% 20%, 100% 100%);
+  transform: translate(0.0125em, 0.025em);
+  opacity: 0.8;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+                 -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+                 -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+                 0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+                 -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+                 0.05em 0 0 rgba(0, 255, 0, 0.75),
+                 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+                 -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+                 -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+}
+
+span {
+  width: 95%;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .image {
+    display: none;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  figure {
+    border-width: 5px;
+    border-radius: 25px;
+  }
+
+  img {
+    border-radius: 25px;
+  }
+
+  figcaption {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .subtitulo {
+    font-size: 40px;
+  }
+
+  .foto1 {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .sobremi {
+    max-width: 100%;
+    margin-bottom: 5%;
+    border-width: 5px;
+    border-radius: 15px;
+  }
+
+  .sobremi p {
+    font-size: 16px;
+  }
+
+  .titulo {
+    font-size: 50px;
+  }
+
+  footer {
+    padding: 1px;
+    width: 99.6%;
+  }
+
+  .footer-list li {
+    margin: 5px 0;
+  }
+
+  .glitch {
+    font-size: 30px;
+  }
+
+  .glitchv2 {
+    font-size: 25px;
+  }
+}

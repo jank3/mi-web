@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iniciar Sesion</title>
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="logo1">
+      <img src="img/logo.png" onmouseover="this.src='img/image.png';"onmouseout="this.src='img/logo.png';" alt="Logo de mi página" id="logo">
+    </div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="about.html">Sobre mi</a>
+      <a href="games.html">DLCs</a>
+      <a href="contact.html">Contacto</a>
+      <a href="login.html">Login</a>
+      </nav>
+    </header>
+  <div class="main">  
+    <input type="checkbox" id="chk" aria-hidden="true">
+
+      <div class="signup">
+        <form action="index.html">
+          <label for="chk" aria-hidden="true">Crea tu cuenta</label>
+          <input type="text" name="txt" placeholder="User name" required="">
+          <input type="email" name="email" placeholder="Email" required="">
+          <input type="number" name="broj" placeholder="Telefono" required="">
+          <input type="password" name="pswd" placeholder="Password" required="">
+          <button>Sign up</button>
+        </form>
+      </div>
+
+      <div class="login">
+        <form action="index.html" >
+          <label for="chk" aria-hidden="true">Login</label>
+          <input type="email" name="email" placeholder="Email" required="">
+          <input type="password" name="pswd" placeholder="Password" required="">
+          <button>Login</button>
+        </form>
+      </div>
+  </div>
+</body>
